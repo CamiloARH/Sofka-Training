@@ -26,19 +26,22 @@ public class HelloWord {
 //        data = JOptionPane.showInputDialog(" Ingrese un Dato: ");
 //        System.out.println("El dato que se ingreso es: " + data);
 
-//        CarBMW c = new CarBMW();
+        CarBMW c = new CarBMW();
+        Car a = new Car();
 //        Car b = new Car(120,12,3,5,"red",4,"no se",false);
-//        c.status();
-//        c.starTheCar();
-//        System.out.println(c.obtenerPeso());
-//        c.status();
-//        c.offTheCar();
-//        System.out.println(b.obtenerPeso());
-//        b.status();
-//        c.turbo();
-//        b.info();
-//        c.info();
-
+        Car b = new Car(120,5,8);
+        c.status();
+        c.starTheCar();
+        System.out.println(c.obtenerPeso());
+        c.status();
+        c.offTheCar();
+        System.out.println(b.obtenerPeso());
+        b.status();
+        c.turbo();
+        b.info();
+        c.info();
+        b.setModelo("Mazda");
+        System.out.println(b.getModelo());
 
 
     }

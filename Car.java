@@ -2,14 +2,14 @@ package com.sofka.project;
 
 public class Car {
     // variables nativas de la clase
-    double peso;
-    double altura;
-    double ancho;
-    double largo;
-    int numeroPuertas;
-    String modelo;
-    String color;
-    boolean encendido = false;
+    private double peso;
+    private double altura;
+    private double ancho;
+    private double largo;
+    private int numeroPuertas;
+    private String modelo;
+    private String color;
+    private boolean encendido = false;
 
     //constructores
 
@@ -34,6 +34,15 @@ public class Car {
         this.encendido = encendido;
     }
 
+    public Car(double peso) {
+        this.peso = peso;
+    }
+
+    public Car(double altura, double ancho, double largo) {
+        this.altura = altura;
+        this.ancho = ancho;
+        this.largo = largo;
+    }
     // Metodos
 
     public double obtenerPeso(){
@@ -59,12 +68,76 @@ public class Car {
     public void info(){
         System.out.println("Este es un carro");
     }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public double getAncho() {
+        return ancho;
+    }
+
+    public void setAncho(double ancho) {
+        this.ancho = ancho;
+    }
+
+    public double getLargo() {
+        return largo;
+    }
+
+    public void setLargo(double largo) {
+        this.largo = largo;
+    }
+
+    public int getNumeroPuertas() {
+        return numeroPuertas;
+    }
+
+    public void setNumeroPuertas(int numeroPuertas) {
+        this.numeroPuertas = numeroPuertas;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public boolean isEncendido() {
+        return encendido;
+    }
+
+    public void setEncendido(boolean encendido) {
+        this.encendido = encendido;
+    }
 }
 
   //  Class aparte, pero hereda lo de la funcion anterior Car
 class CarBMW extends Car{
     public CarBMW(){
-        this.modelo="BMW";
+        this.setModelo("BMW");
     }
     public void turbo(){
         System.out.println("Acabas de viajar a 250 km/h");
