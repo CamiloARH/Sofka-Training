@@ -26,7 +26,7 @@ public class HelloWord {
 //        data = JOptionPane.showInputDialog(" Ingrese un Dato: ");
 //        System.out.println("El dato que se ingreso es: " + data);
 
-        CarBMW c = new CarBMW();
+        CarBmw c = new CarBmw();
         Car a = new Car();
 //        Car b = new Car(120,12,3,5,"red",4,"no se",false);
         Car b = new Car(120,5,8);

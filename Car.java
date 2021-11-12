@@ -46,8 +46,10 @@ public class Car {
     // Metodos
 
     public double obtenerPeso(){
+
         return this.peso;
     }
+
     public void  starTheCar(){
         this.encendido = true;
         System.out.println("Acabas de prender el carro");
@@ -134,16 +136,5 @@ public class Car {
     }
 }
 
-  //  Class aparte, pero hereda lo de la funcion anterior Car
-class CarBMW extends Car{
-    public CarBMW(){
-        this.setModelo("BMW");
-    }
-    public void turbo(){
-        System.out.println("Acabas de viajar a 250 km/h");
-    }
-      // para mirar el polimorfismo
-      public void info(){
-          System.out.println("Este es un carro BMW");
-      }
-  }
+
+
